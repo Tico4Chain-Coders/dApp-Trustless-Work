@@ -29,13 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased p-5`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased p-5 flex flex-col min-h-screen`}
       >
         <Header />
         {children}
-        <Footer />
         <Toaster />
       </body>
+      <Footer />
     </html>
   );
 }
