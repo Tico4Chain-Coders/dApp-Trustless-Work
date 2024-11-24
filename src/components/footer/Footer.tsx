@@ -15,21 +15,21 @@ const Footer: React.FC = () => {
           <p>
             Email:{" "}
             <Link
-              href="mailto:example@example.com"
+              href="mailto:trustlesswork@gmail.com"
               className="text-blue-600 hover:underline dark:text-blue-400"
             >
-              example@example.com
+              trustlesswork@gmail.com
             </Link>
           </p>
           <p>
             Website:{" "}
             <Link
-              href="https://example.com"
+              href="https://www.trustlesswork.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline dark:text-blue-400"
             >
-              example.com
+              trustlesswork.com
             </Link>
           </p>
         </div>
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
           <h4 className="font-semibold text-lg mb-1 text-center">Social</h4>
           <div className="flex space-x-4">
             <Link
-              href="url"
+              href="https://www.linkedin.com/company/trustlesswork/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80"
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
               />
             </Link>
             <Link
-              href="url"
+              href="https://x.com/TrustlessWork"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80"
