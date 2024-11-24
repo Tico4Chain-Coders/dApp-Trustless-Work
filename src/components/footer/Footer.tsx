@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           <ul>
             <li>
               <Link
-                href="https://example.com/joel-vargas"
+                href="https://www.linkedin.com/in/joelvr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -50,17 +50,17 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                href="https://example.com/armando-cortes"
+                href="https://www.linkedin.com/in/armandocode/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                Armando Cortés
+                Armando Murillo
               </Link>
             </li>
             <li>
               <Link
-                href="https://example.com/caleb-loria"
+                href="https://www.linkedin.com/in/loriacaleb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                href="https://example.com/alberto-chaves"
+                href="https://www.linkedin.com/in/alberto-chaves-costarica/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
