@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -24,12 +23,12 @@ export function CancelEscrowForm() {
       >
         <FormField
           control={form.control}
-          name="contractId"
+          name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Contract ID</FormLabel>
+              <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="Enter the contract id" {...field} />
+                <Input placeholder="Enter the email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -37,17 +36,27 @@ export function CancelEscrowForm() {
         />
         <FormField
           control={form.control}
-          name="engagementId"
+          name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Engagement</FormLabel>
+              <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input placeholder="Enter the engagement" {...field} />
+                <Input placeholder="Enter the name" {...field} />
               </FormControl>
-              <FormDescription>
-                This engagement will help you identify the escrows associated
-                with a service provider.
-              </FormDescription>
+
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="lastName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Last Name</FormLabel>
+              <FormControl>
+                <Input placeholder="Enter the last name" {...field} />
+              </FormControl>
               <FormMessage />
             </FormItem>
           )}
