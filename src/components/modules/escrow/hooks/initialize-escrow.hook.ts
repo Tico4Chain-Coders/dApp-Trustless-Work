@@ -12,12 +12,14 @@ import { formSchema } from "../schema/initialize-escrow-schema";
 import { z } from "zod";
 import { addEscrow } from "../server/escrow-firebase";
 import { useWalletStore } from "@/store/walletStore/store";
+import { useRouter } from "next/navigation";
 
 export const useInitializeEscrowHook = () => {
   const { toast } = useToast();
   const { address } = useWalletStore();
   const setIsLoading = useLoaderStore((state) => state.setIsLoading);
-  const { formData, setFormData } = useEscrowFormStore();
+  const { formData, setFormData, resetForm } = useEscrowFormStore();
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -71,6 +73,8 @@ export const useInitializeEscrowHook = () => {
         // ! Validate if the user has the preference in true
         await addEscrow({ payload, address });
 
+        router.push("/dashboard/escrow/my-escrows");
+        resetForm();
         form.reset();
         setIsLoading(false);
         toast({
